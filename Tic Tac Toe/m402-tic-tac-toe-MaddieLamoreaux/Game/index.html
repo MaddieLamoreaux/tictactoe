@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript file (deferred) -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- New game menu start -->
+    <section id="new-game-menu">
+        <h2>New Game</h2>
+        <p>Pick Player 1's mark:</p>
+        <button id="new-game-cpu">New Game (vs CPU)</button>
+        <button id="new-game-player">New Game (vs Player)</button>
+    </section>
+    <!-- New game menu end -->
+
+    <!-- Game board start -->
+    <section id="game-board">
+        <h2>Game Board</h2>
+
+        <!-- Game status -->
+        <div id="game-status">
+            <!-- Placeholder for game status messages -->
+            <p id="game-message">Player X's turn</p>
+        </div>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard">
+            <div id="player1-score">
+                <span>Player 1 (X)</span>
+                <span id="score-x">0</span>
+            </div>
+            <div id="ties-score">
+                <span>Ties</span>
+                <span id="score-ties">0</span>
+            </div>
+            <div id="player2-score">
+                <span>Player 2 (O) / CPU</span>
+                <span id="score-o">0</span>
+            </div>
+        </div>
+
+        <!-- Game board grid -->
+        <div id="game-grid">
+            <!-- Placeholder for tic-tac-toe grid cells -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Game controls -->
+        <div id="game-controls">
+            <button id="quit-game">Quit Game</button>
+            <button id="next-round">Next Round</button>
+            <button id="restart-game">Restart Game</button>
+        </div>
+    </section>
+    <!-- Game board end -->
+
+    <script src="game.js" defer></script>
+</body>
+
+</html>

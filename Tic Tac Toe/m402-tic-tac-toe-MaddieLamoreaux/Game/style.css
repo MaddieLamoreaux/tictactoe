@@ -1,0 +1,92 @@
+* General styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #DBE8ED; /* Silver Hover color */
+    color: #1A2A33; /* Dark Navy */
+}
+
+h2, p {
+    margin: 0 0 10px;
+}
+
+/* New game menu styles */
+#new-game-menu {
+    padding: 20px;
+    text-align: center;
+    background-color: #1F3641; /* Semi Dark Navy */
+    color: #DBE8ED; /* Silver Hover */
+}
+
+#new-game-menu button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #31C3BD; /* Light Blue */
+    color: #DBE8ED; /* Silver Hover */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-game-menu button:hover {
+    background-color: #65E9E4; /* Light Blue Hover */
+}
+
+/* Game board styles */
+#game-board {
+    padding: 20px;
+    text-align: center;
+    background-color: #1A2A33; /* Dark Navy */
+    color: #DBE8ED; /* Silver Hover */
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBE8ED; /* Silver Hover */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1F3641; /* Semi Dark Navy */
+}
+
+.cell:hover {
+    background-color: #A8BFC9; /* Silver */
+}
+
+#game-controls {
+    margin-top: 20px;
+}
+
+#game-controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #F2B137; /* Light Yellow */
+    color: #DBE8ED; /* Silver Hover */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#game-controls button:hover {
+    background-color: #FFC860; /* Light Yellow Hover */
+}
